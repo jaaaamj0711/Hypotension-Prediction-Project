@@ -39,13 +39,12 @@
 
 ### 모델 평가 기준
 클래스의 불균형과 의료 데이터임을 고려하여 다음과 같이 모델 평가 기준을 설정하였습니다.
-1) Balanced Accuracy 사용
-* Balanced accuracy: 각 클래스 재현율의 산술 평균입니다.(1에 가까울수록 좋음)
 
-클래스 불균형 특징으로 일반적인 Accuracy가 아닌 Balanced Accuracy를 기준으로 모델을 평가합니다.
+**1)Balanced accuracy**
+- Balanced accuracy란 각 클래스 재현율의 산술 평균입니다.(1에 가까울수록 좋음) 클래스 불균형 특징으로 일반적인 Accuracy가 아닌 Balanced Accuracy를 기준으로 모델을 평가합니다.
 
-2) PPV, NPV
-클래스의 불균형으로 정상과 저혈압을 각각 얼마나 예측했는지 파악하는 것이 중요합니다. 따라서 NPV(Negative Prediction Value)의 값이 어느정도 나온 모델을 선정해야 합니다.
+**2)NPV**
+- 클래스의 불균형으로 정상과 저혈압을 각각 얼마나 예측했는지 파악하는 것이 중요합니다. 따라서 NPV(Negative Prediction Value)의 값이 어느정도 나온 모델을 선정해야 합니다.
 
 ### 사용 모델
 - NaiveBayes 
@@ -62,3 +61,6 @@
 
 ### RandomForest
 <img width="450" height="400" alt="스크린샷 2021-06-13 오후 6 35 41" src="https://user-images.githubusercontent.com/55734436/122633777-452c9480-d115-11eb-9fa0-ce8a787eaabe.png">
+
+- Decision Tree와 RandomForest는 클래스 불균형 문제로 인해 모든 값을 정상혈압으로 예측하였습니다. 물론, 정확도는 높지만 좋은 모델이라고 할 수 없습니다.
+- NaiveBayes는 저혈압 데이터 15개에서 11개를 예측하였습니다. 정상 데이터의 예측값은 조금 떨어졌지만 클래스 불균형과 의료 데이터의 특징을 고려하여 NaiveBayes를 가장 좋은 모델로 선정하였습니다.
