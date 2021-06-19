@@ -29,7 +29,7 @@ for(file in flist){
     temp2<- strsplit(temp$signal[3:length(temp$signal)], ",") 
     IBP<- as.numeric(unlist(lapply(temp2,function(second){ # lapply 사용하여 2번째값 추출
       return(second[2])})))
-    assign(f,IBP)
+    assign(file,IBP)
 }
 
 SRATE<-250
