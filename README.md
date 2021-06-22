@@ -43,8 +43,8 @@
 **1)Balanced accuracy**
 - Balanced accuracy란 각 클래스 재현율의 산술 평균입니다.(1에 가까울수록 좋음) 클래스 불균형 특징으로 일반적인 Accuracy가 아닌 Balanced Accuracy를 기준으로 모델을 평가합니다.
 
-**2)NPV**
-- 클래스의 불균형으로 정상과 저혈압을 각각 얼마나 예측했는지 파악하는 것이 중요합니다. 따라서 NPV(Negative Prediction Value)의 값이 어느정도 나온 모델을 선정해야 합니다.
+**2)NPV(Negative Prediction Value)**
+- 클래스의 불균형으로 정상과 저혈압을 각각 얼마나 예측했는지 파악하는 것이 중요합니다. 따라서 NPV의 값이 어느정도 나온 모델을 선정해야 합니다.
 
 ### 사용 모델
 - NaiveBayes 
