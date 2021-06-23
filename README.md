@@ -5,8 +5,10 @@
 [순천향대학교 빅데이터센터](http://aibig.sch.ac.kr/main.do)에서 제공하는 혈압 관련 데이터입니다. 해당 데이터는 MIT-BIH 데이터로 수면중 측정한 데이터입니다. 따라서 깨어있을때 보다 저혈압의 기준이 낮은 것이 특징입니다.
 
 ## Pre-Processing
+[code](https://github.com/jaaaamj0711/Hypotension-Prediction-Project/blob/main/preprocessing.R)
 - 관찰기간을 1분 단위로 측정을 합니다.
 - 최소값이 50이하일때를 저혈압 발생으로 정의합니다.
+
 
 ## Data singularity
 
@@ -15,6 +17,7 @@
 - 0은 정상혈압, 1은 저혈압을 의미합니다. 클래스 비율을 보면 매우 불균형한 형태로 분포하고 있습니다.
 
 ## Feature Extraction
+[code](https://github.com/jaaaamj0711/Hypotension-Prediction-Project/blob/main/feature_extraction.R)
 
 ### Statistical Features
 통계 특징을 사용하여 추출한 변수입니다. 사용한 특징들은 다음과 같습니다.
